@@ -30,15 +30,11 @@
                     <a class="nav-link" href="/tasks">Tasks</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </nav>
-    {% if success == True %}
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <strong>Hey! dear</strong> Thanks for submitting the form!
+    {% if success %}
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Hey! dear</strong> Your Task has been added to the list. 
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
@@ -61,7 +57,11 @@
         <button type="submit" class="btn btn-secondary">Submit</button>
       </form>
     </div>
-
+    <footer class = "bg-dark text-light fixed-bottom">
+        <p class = "text-center py-2 my-0">
+            Copyright &copy; 2022 - All rights reserved
+        </p>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
